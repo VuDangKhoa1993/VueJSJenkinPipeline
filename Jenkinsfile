@@ -7,15 +7,10 @@ pipeline{
     stages {
         stage('build') {
             steps {
-               bat 'set'
-               echo 'the build is running'
+                sh 'node --version'
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Fail! exit 1 '
-            }
-        }
+        
     }
     post {
         always {

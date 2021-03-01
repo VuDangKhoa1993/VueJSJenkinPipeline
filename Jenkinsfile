@@ -7,12 +7,7 @@ pipeline{
     stages {
         stage('build') {
             steps {
-                sh 'npm --version'
-                sh 'echo 'Kyanon digital ''
-                sh '''
-                    echo "Multiline shell steps works too"
-                    ls -lah
-                '''
+               bat 'set'
             }
         }
     }
